@@ -217,7 +217,8 @@ public class Main {
         for (int j = 0; j < plants.length; j++) {
             System.out.println(plants[j]);
         }
-        System.out.println("<4 uzduotis>");
+        System.out.println("<5 uzduotis>");
+
 
 
 
