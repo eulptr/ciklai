@@ -234,11 +234,11 @@ public class Main {
 
         System.out.println("<arba>");
         for (int h = 10; h <= 50 ; h++) {
-            if (h%2 == 0) {
-                System.out.println(h + "");
+            if (h%10 == 0) {
+                System.out.println(h);
             }
-
         }
+
 
 
 
