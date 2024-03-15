@@ -25,14 +25,14 @@ public class Main {
         }
         System.out.println("------------------");
         for (int i = 0; i < 5; i++) {
-            if(i == 2){
+            if (i == 2) {
                 continue;
             }
             System.out.println(i);
         }
         System.out.println("------------------");
         for (int i = 0; i < 5; i++) {
-            if(i == 3){
+            if (i == 3) {
                 break;
             }
             System.out.println(i);
@@ -63,7 +63,7 @@ public class Main {
         System.out.println("-------...-----");
 
         int i = 0;
-        for (  ; i < 5 ; ) {
+        for (; i < 5; ) {
             System.out.println(i);
             i++;
         }
@@ -71,37 +71,37 @@ public class Main {
         System.out.println("-------...-----");
 
         int a = 0;
-        for (  ; a < 5 ; ) {
+        for (; a < 5; ) {
             a++;
             System.out.println(a);
         }
         int b = 0;
 
-        for (  ; true; ) {
+        for (; true; ) {
             System.out.println(b);
             b++;
-            if(b > 5){
+            if (b > 5) {
                 break;
             }
         }
         System.out.println("-------...-----");
 
         int counter = 0;
-        while (true){
+        while (true) {
             counter++;
             System.out.println(counter);
-            if (counter >= 5){
+            if (counter >= 5) {
                 break;
             }
         }
         long count = 0;
         //  for (int j = 0; j < 100000000; j++) {
 
-        while (true){
+        while (true) {
             int dice = 1 + (int) Math.round(Math.random() * 5);
             int dice2 = 1 + (int) Math.round(Math.random() * 5);
             count++;
-            if(dice == 1 && dice2 == 1){
+            if (dice == 1 && dice2 == 1) {
                 //         System.out.println("Snake eyes!");
                 break;
             }
@@ -111,15 +111,15 @@ public class Main {
         System.out.println(count / 100000000.0);
 
 
-        do{
+        do {
             System.out.println("Hallo");
-        }while(false);
+        } while (false);
 
         int o = 0;
         boolean shouldContinue = true;
-        while (shouldContinue){
+        while (shouldContinue) {
             o++;
-            if(o == 5 ){
+            if (o == 5) {
                 shouldContinue = false;
             }
             System.out.println(o);
@@ -149,7 +149,7 @@ public class Main {
         System.out.println(numbers[0]);
         System.out.println(numbers[1]);
 
-        int[] grades = {5,7,10,9,8,4,5,10,9};
+        int[] grades = {5, 7, 10, 9, 8, 4, 5, 10, 9};
 
         System.out.println(grades[0]);
         System.out.println(grades[1]);
@@ -163,11 +163,11 @@ public class Main {
         }
 
         for (int j = 0; j < name.length(); j++) {
-            System.out.println("name.charAt("+j+")");
+            System.out.println("name.charAt(" + j + ")");
         }
 
         for (int j = 0; j < grades.length; j++) {
-            System.out.println(grades[j] + "<--- grades["+j+"]");
+            System.out.println(grades[j] + "<--- grades[" + j + "]");
         }
 
         System.out.println(grades[4]);
@@ -184,7 +184,7 @@ public class Main {
         }
         System.out.println("------------------------------");
         for (int j = 0; j < students.length; j++) {
-            if (students[j] == null){
+            if (students[j] == null) {
                 continue;
             }
             System.out.println("labas " + students[j]);
@@ -197,7 +197,7 @@ public class Main {
         }
 
         System.out.println("<2 uzduotis>");
-        for (int x = 0; x <10; x++) {
+        for (int x = 0; x < 10; x++) {
             System.out.println(x);
         }
 
@@ -218,9 +218,27 @@ public class Main {
             System.out.println(plants[j]);
         }
         System.out.println("<5 uzduotis>");
+        for (int j = 9; j >= 0; j--) {
+            System.out.println(plants[j]);
+        }
 
+        System.out.println("<6 uzduotis>");
+        for (int c = 10; c <= 50; c += 2) {
+            System.out.println(c);
+        }
 
+        System.out.println("<7 uzduotis>");
+        for (int m = 10; m <=50 ; m=m+2) {
+            System.out.println(m+ "");
+        }
 
+        System.out.println("<arba>");
+        for (int h = 10; h <= 50 ; h++) {
+            if (h%2 == 0) {
+                System.out.println(h + "");
+            }
+
+        }
 
 
 
