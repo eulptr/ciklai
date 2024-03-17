@@ -234,10 +234,16 @@ public class Main {
 
         System.out.println("<arba>");
         for (int h = 10; h <= 50 ; h++) {
-            if (h%10 == 0) {
+            if (h%10 == 0)
                 System.out.println(h);
             }
+
+        System.out.println("8 uzduotis");
+        for (int d = 0; d <= 20; d++) {
+            if (d%2 == 0)
+                System.out.println(d);
         }
+
 
 
 
