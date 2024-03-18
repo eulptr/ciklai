@@ -228,22 +228,95 @@ public class Main {
         }
 
         System.out.println("<7 uzduotis>");
-        for (int m = 10; m <=50 ; m=m+2) {
-            System.out.println(m+ "");
+        for (int m = 10; m <= 50; m += 2) {
+            System.out.println(m);
         }
 
         System.out.println("<arba>");
-        for (int h = 10; h <= 50 ; h++) {
-            if (h%10 == 0)
-                System.out.println(h);
+        for (int h = 10; h <= 50; h += 2) {
+            if (h % 10 == 0) {
+                continue;
             }
 
-        System.out.println("8 uzduotis");
-        for (int d = 0; d <= 20; d++) {
-            if (d%2 == 0)
-                System.out.println(d);
+            System.out.println(h);
         }
 
+        System.out.println("<8 uzduotis>");
+        count = 0;
+        for (int d = 0; d <= 20; d++) {
+            if (d % 2 == 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
+
+        System.out.println("<9 uzduotis>");
+
+        /* if (plants[9].length() <= 5) {
+            count++;
+            System.out.println(plants[9]);
+            }
+         */
+
+        int h = 0;
+        o = 0;
+//System.out.println(plants[0].length());
+
+        // for (int j = 0; j < plants.length; j++) {
+        //   System.out.println(plants[j]);
+        //  System.out.println(plants[j].length());
+
+        for (int j = 0; j < plants.length; j++) {
+            if (plants[j].length() < 5) {
+                h++;
+            }
+            if (plants[j].length() > 7) {
+                o++;
+            }
+        }
+        System.out.println(h + " ir " + o);
+
+        System.out.println("<10 uzduotis>");
+        // System.out.println(plants[0].length());
+        count = 0;
+        for (int j = 0; j < plants.length; j++) {
+            if (plants[j].length() > 5 && plants[j].length() < 10) {
+                count++;
+            }
+        }
+
+        System.out.println(count);
+
+        System.out.println("<1 sunkesne uzduotis>");
+
+        int count1 = 0;
+
+
+        for (int xx = 0; xx < 300; xx++) {
+            int number1 = (int) (Math.random() * 300);
+            System.out.println(number1 + " ");
+            if (number1 > 150) {
+                count1++;
+            }
+            if (number1 > 275) {
+                System.out.println(" [" + number1 + "] ");
+            }else{
+                System.out.println(number1 + " ");
+            }
+        }
+        System.out.println();
+        System.out.println(count1);
+
+        System.out.println("<2 sunkesne uzduotis>");
+        String result = "";
+        int count2 = 0;
+
+        for (int f = 1; f<= 3000; f++) {
+            if (f % 77 == 0) {
+                result += f + ",";
+            }
+        }
+        System.out.println(result.substring(0, result.length()-1) );
 
 
 
