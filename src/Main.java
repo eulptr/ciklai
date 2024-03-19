@@ -300,7 +300,7 @@ public class Main {
             }
             if (number1 > 275) {
                 System.out.println(" [" + number1 + "] ");
-            }else{
+            } else {
                 System.out.println(number1 + " ");
             }
         }
@@ -309,16 +309,37 @@ public class Main {
 
         System.out.println("<2 sunkesne uzduotis>");
         String result = "";
-        int count2 = 0;
 
-        for (int f = 1; f<= 3000; f++) {
+        for (int f = 1; f <= 3000; f++) {
             if (f % 77 == 0) {
                 result += f + ",";
             }
         }
-        System.out.println(result.substring(0, result.length()-1) );
+        System.out.println(result.substring(0, result.length() - 1));
 
+        System.out.println("<3 sunkesne uzduotis>");
 
+        for (int x = 1; x < 25; x++) {
+            for (int y = 1; y < 25; y++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("ar");
+        int row = 25;
+        int clmn = 25;
+        for (int v = 0; v < row; v++) {
+            for (int w = 0; w < clmn; w++) {
+                if (v == 0 || v == row - 1 || w == 0 || w == clmn) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println("*");
+
+        }
 
 
 
